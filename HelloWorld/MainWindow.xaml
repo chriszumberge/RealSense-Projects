@@ -1,0 +1,19 @@
+﻿<Window x:Class="HelloWorld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hello World RealSense App" Width="640" Height="580"
+        WindowStartupLocation="CenterScreen"
+        Closing="Window_Closing"
+        Loaded="Window_Loaded"
+        ResizeMode="CanMinimize" >
+
+    <StackPanel>
+        <Image x:Name="imgColorStream" />
+        <Label x:Name="lblMessage"
+               HorizontalAlignment="Center"
+               FontSize="24" />
+        <Button x:Name="btnReverse" Content="Reverse"
+                Click="btnReverse_Click"/>
+    </StackPanel>
+
+</Window>
